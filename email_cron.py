@@ -14,8 +14,8 @@ def sendmail():
 		futuredate = date_par + relativedelta( days=90)
 		progress = (datetime.date.today()- date_par).days
 		countdown = int(p.duration) - progress
-		sender='g.sriramana@gmail.com'
-		sender_name='Sri'
+		sender='email'
+		sender_name='name'
 		receiver= p.email
 		receiver_name= p.nickname
 		mail.send_mail(sender="""%(sender_name)s <%(sender)s>"""%{'sender_name':sender_name,'sender':sender},
