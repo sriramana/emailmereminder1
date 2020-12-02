@@ -37,10 +37,10 @@ class MainPage(webapp2.RequestHandler):
 		futuredate = date_inp + relativedelta( days=90)
 		progress = (datetime.datetime.today()- date_inp).days
 		countdown = 90 - progress
-		sender='g.sriramana@gmail.com'
+		sender='sender@email'
 		sender_name='Sri'
-		receiver='g.sriramana@gmail.com'
-		receiver_name='SriR'
+		receiver='receiver@email'
+		receiver_name='Nmae'
 		post_reminder = model.Reminder()
 		post_reminder.nickname = self.request.get("nickname")
 		post_reminder.email = self.request.get("email")
