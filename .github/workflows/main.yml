@@ -37,5 +37,5 @@ jobs:
           git add swagger.json
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git commit -m "triggered by GITHUB_SHA on GITHUB_REF"
+          git commit -m "triggered by $GITHUB_SHA on $GITHUB_REF"
           git push
