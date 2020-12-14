@@ -33,7 +33,7 @@ jobs:
         run: |
           git fetch
           git checkout gh-pages
-          git restore —source master swagger.json
+          git restore --source master swagger.json
           git add swagger.json
           git commit -m "triggered by GITHUB_SHA on GITHUB_REF"
           git push
